@@ -67,13 +67,15 @@ influencer section styles
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  color: white;
 }
 .influencer-button a {
   text-decoration: none;
   color: white;
 }
 .influencer-button:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: transform 0.5s;
 }
 .influencer-right {
@@ -119,8 +121,7 @@ influencer section styles
 }
 .item:hover{
     transform: scale(1.03);
-    transition: transform 0.4s ease-in ;
-    
+    transition: transform 0.4s ease-in ;  
 }
 .item-image img {
   width: 100%;
@@ -158,6 +159,58 @@ influencer section styles
   color: #e02c6d;
 }
 
+/* =============================
+discount banner section style 
+================================*/
+.discount-heading{
+  font-size:30px;
+  text-align: center;
+}
+.discount-banner-container{
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-gap: 30px;
+  justify-content:center;
+  align-items:stretch;
+}
+.discount-banner{
+  display: flex;
+  background-color:#9f7fda;
+  border-radius:10px;
+  width: 500px;
+  padding: 20px;
+}
+.discount-title{
+  width: 40%;
+  margin-top: 70px;
+}
+.discount-title h1{
+  font-size:25px;
+  color:white
+}
+.discount-banner-image{
+  width:60%;
+}
+.discount-banner-image img{
+  width:100%;
+}
+.discount-items{
+  width:250px;
+  padding:20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px 0px rgb(172, 170, 170);
+}
+.discount-items:hover{
+  transform: scale(1.02);
+  transition: transform 0.5s;
+}
+.product-image img{
+  width:100%;
+  border-radius: 10px;
+  height:250px;
+}
+
+
 /* =====================
   footer section style 
   ====================== */
@@ -192,6 +245,11 @@ influencer section styles
   border-radius: 13px;
 }
 .footer-icons a:hover {
-    transform: scale(1.3);
-    transition: transform ;
+    transform: scale(1.2);
 }
+
+
+/* ================================
+media query for responsiveness
+================================== */
+
