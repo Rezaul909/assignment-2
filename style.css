@@ -11,7 +11,7 @@ body {
   color: #e02c6d;
 }
 .container {
-  padding: 50px 175px;
+  padding: 50px 150px;
   margin-bottom: 50px;
 }
 
@@ -26,8 +26,8 @@ header section style
   justify-content: space-between;
   margin: 0 120px;
 }
-.menu-title{
-    color: white;
+.menu-title {
+  color: white;
 }
 .menu-items a {
   text-decoration: none;
@@ -74,25 +74,25 @@ influencer section styles
   text-decoration: none;
   color: white;
 }
-.influencer-button:hover{
-    transform: scale(1.05);
-    transition: transform 0.5s;
+.influencer-button:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
 }
 .influencer-right {
   width: 50%;
   text-align: right;
 }
-.influence-banner:hover img{
-    transform: scale(1.2);
-    transition: transform 1s ease-in-out;
+.influence-banner:hover img {
+  transform: scale(1.2);
+  transition: transform 1s ease-in-out;
 }
 
 /* =========================
     company logo style 
 =========================== */
 .logo-container {
-  border-top: 2px solid #F7F0FF;
-  border-bottom: 2px solid #F7F0FF;
+  border-top: 2px solid #f7f0ff;
+  border-bottom: 2px solid #f7f0ff;
 }
 .company-logos {
   display: flex;
@@ -119,9 +119,9 @@ influencer section styles
   padding: 14px;
   box-shadow: 0 10px 40px 0px rgb(172, 170, 170);
 }
-.item:hover{
-    transform: scale(1.03);
-    transition: transform 0.4s ease-in ;  
+.item:hover {
+  transform: scale(1.03);
+  transition: transform 0.4s ease-in;
 }
 .item-image img {
   width: 100%;
@@ -162,54 +162,53 @@ influencer section styles
 /* =============================
 discount banner section style 
 ================================*/
-.discount-heading{
-  font-size:30px;
+.discount-heading {
+  font-size: 30px;
   text-align: center;
 }
-.discount-banner-container{
+.discount-banner-container {
   display: grid;
-  grid-template-columns:repeat(3,1fr);
-  grid-gap: 30px;
-  justify-content:center;
-  align-items:stretch;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: stretch;
 }
-.discount-banner{
+.discount-banner {
   display: flex;
-  background-color:#9f7fda;
-  border-radius:10px;
+  background-color: #9f7fda;
+  border-radius: 10px;
   width: 500px;
-  padding: 20px;
+  padding: 20px 0 0 20px;
 }
-.discount-title{
+.discount-title {
   width: 40%;
   margin-top: 70px;
 }
-.discount-title h1{
-  font-size:25px;
-  color:white
+.discount-title h1 {
+  font-size: 25px;
+  color: white;
 }
-.discount-banner-image{
-  width:60%;
+.discount-banner-image {
+  width: 60%;
 }
-.discount-banner-image img{
-  width:100%;
+.discount-banner-image img {
+  width: 100%;
 }
-.discount-items{
-  width:250px;
-  padding:20px;
+.discount-items {
+  width: 200px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 10px 40px 0px rgb(172, 170, 170);
 }
-.discount-items:hover{
+.discount-items:hover {
   transform: scale(1.02);
   transition: transform 0.5s;
 }
-.product-image img{
-  width:100%;
+.product-image img {
+  width: 100%;
   border-radius: 10px;
-  height:250px;
+  height: 200px;
 }
-
 
 /* =====================
   footer section style 
@@ -245,11 +244,73 @@ discount banner section style
   border-radius: 13px;
 }
 .footer-icons a:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
-
 
 /* ================================
 media query for responsiveness
 ================================== */
 
+/* media query for Mobile devices */
+
+@media only screen and (max-width:688px) {
+
+  .container{
+    padding: 20px 20px;
+  }
+  .menu-items{
+    display: flex;
+    margin: 0;
+  }
+  .menu-title{
+    font-size:14px;
+  }
+  .menu{
+    padding-right: 10px;
+  }
+  .menu a{
+    font-size:10px;
+    margin: 0 5px;
+  }
+
+  .influencer-section{
+    display: grid;
+    grid-template-columns:repeat(1,1fr);
+  }
+  .influencer-title{
+    font-size:27px;
+  }
+  .influencer-left{
+    width: 100%;
+  }
+  .influencer-right{
+    width: 100%;
+    padding-top: 15px;
+  }
+  .influencer-right img{
+    width: 100%;
+  }
+
+  .company-logos{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-gap: 15px;
+    justify-items: center;
+  }
+
+  .collection-items{
+    display: grid;
+    grid-template-columns:repeat(1,1fr);
+  }
+
+  .discount-banner-container{
+    display: grid;
+    grid-template-columns:repeat(1,1fr);
+  }
+  .discount-banner{
+    width:94%;
+  }
+  .discount-items{
+    width:88%;
+  }
+}
