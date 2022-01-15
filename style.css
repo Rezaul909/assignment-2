@@ -168,17 +168,19 @@ discount banner section style
 }
 .discount-banner-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  justify-content: center;
-  align-items: stretch;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px;
 }
 .discount-banner {
   display: flex;
   background-color: #9f7fda;
   border-radius: 10px;
   width: 500px;
-  padding: 20px 0 0 20px;
+  padding: 20px 0 15px 20px;
+}
+.products{
+  display: flex;
+  justify-content:space-between;
 }
 .discount-title {
   width: 40%;
@@ -251,7 +253,8 @@ discount banner section style
 media query for responsiveness
 ================================== */
 
-/* media query for Mobile devices */
+/* media query for Mobile devices
+---------------------------------- */
 
 @media only screen and (max-width:688px) {
 
@@ -310,7 +313,82 @@ media query for responsiveness
   .discount-banner{
     width:94%;
   }
+  .products{
+    display: grid;
+    grid-template-columns:repeat(1,1fr);
+    grid-gap: 30px;
+  }
   .discount-items{
     width:88%;
   }
+}
+
+/* media query for tablet devices
+---------------------------------- */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+
+  .container{
+    padding:30px 20px;
+  }
+  .menu-items{
+    width: 90%;
+    margin: 0;
+    display: flex;
+  }
+  .menu a{
+    font-size: 16px;
+    margin: 0 5px;
+  }
+  .menu-title{
+    font-size:25px;
+  }
+
+  .influencer-section{
+    display:grid;
+    grid-template-columns:repeat(1,1fr);
+    grid-gap: 30px;
+  }
+  .influencer-left{
+    width:100%;
+    text-align: center;
+  }
+  .influencer-right{
+    width:100%;
+    text-align: center;
+  }
+
+  .company-logos{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap: 40px;
+    align-items: center;
+    justify-items: center;
+
+  }
+
+  .collection-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  
+  .discount-banner-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+    justify-content: center;
+    align-items: stretch;
+  }
+  .discount-banner{
+    width: 97%;
+  }
+  .discount-title h1{
+    font-size:3em;
+  }
+  .products{
+    display: flex;
+    justify-content: space-around;
+  }
+ 
 }
