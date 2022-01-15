@@ -4,15 +4,40 @@
 /* common style  
 -----------------*/
 body {
-    margin: 0;
+  margin: 0;
   font-family: "Poppins", sans-serif;
 }
 .highlight-color {
   color: #e02c6d;
 }
 .container {
-    padding: 50px 175px;
+  padding: 50px 175px;
   margin-bottom: 50px;
+}
+
+/* =======================
+header section style  
+=========================*/
+.header {
+  background-color: #e02c6d;
+}
+.menu-items {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 120px;
+}
+.menu-title{
+    color: white;
+}
+.menu-items a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  margin: 0 10px;
+}
+.menu {
+  display: flex;
+  align-items: center;
 }
 
 /* ========================
@@ -51,6 +76,10 @@ influencer section styles
   width: 50%;
   text-align: right;
 }
+.influence-banner:hover img{
+    transform: scale(1.2);
+    transition: transform 1s;
+}
 
 /* =========================
     company logo style 
@@ -72,7 +101,7 @@ influencer section styles
 .popular-collections-title {
   font-size: 28px;
   text-align: center;
-  margin-bottom:50px;
+  margin-bottom: 50px;
 }
 .collection-items {
   display: grid;
@@ -84,8 +113,8 @@ influencer section styles
   padding: 14px;
   box-shadow: 0 10px 40px 0px rgb(172, 170, 170);
 }
-.item-image img{
-    width: 100%;
+.item-image img {
+  width: 100%;
 }
 .item-name {
   margin-top: 16px;
@@ -109,47 +138,47 @@ influencer section styles
   font-size: 14px;
   font-weight: bold;
 }
-.see-more{
-    margin-top:50px;
-    display:flex;
-    justify-content: flex-end;
+.see-more {
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-end;
 }
-.see-more a{
-    font-size: 16px;
-    text-decoration: none;
-    color:#e02c6d;
+.see-more a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #e02c6d;
 }
 
 /* =====================
   footer section style 
   ====================== */
-  .footer-section{
-      display: flex;
-      justify-content: center;
-      background-color: #0A0826;
-      padding: 50px;
-  }
-  .footer-info{
-      text-align: center;
-  }
-  .footer-title{
-      font-size: 24px;
-      margin-bottom: 0;
-      color: white;
-  }
-  .copyright{
-    color: #D9DBE1;
-    font-size:14px;
-    margin-top: 6px;
-  }
-  .footer-icons{
-      display:flex;
-      justify-content:space-evenly;
-  }
-  .footer-icons a{
-      color: white;
-      background-color: rgba(255, 255, 255, 0.212);
-      height: 26px;
-      width: 26px;
-      border-radius: 13px;
-  }
+.footer-section {
+  display: flex;
+  justify-content: center;
+  background-color: #0a0826;
+  padding: 50px;
+}
+.footer-info {
+  text-align: center;
+}
+.footer-title {
+  font-size: 24px;
+  margin-bottom: 0;
+  color: white;
+}
+.copyright {
+  color: #d9dbe1;
+  font-size: 14px;
+  margin-top: 6px;
+}
+.footer-icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-icons a {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.212);
+  height: 26px;
+  width: 26px;
+  border-radius: 13px;
+}
